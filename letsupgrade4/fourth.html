@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>letsupgrade day4 assignment</h1>
+    </head>
+    <body>
+        <form>
+            1st Number : <input type="text" id="firstNumber" /><br>
+            2nd Number: <input type="text" id="secondNumber" /><br>
+            <input type="button" onClick="add()" Value="add" />
+            <input type="button" onClick="subtract()" Value="subtraction" />
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+            <input type="button" onClick="division()" Value="Divide" />
+            <input type="button" onClick="sqrt()" Value="squareroot" />
+            <input type="button" onClick="per()" Value="percentage" />
+        </form>
+            <p>The Result is : <br>
+            <span id = "result"></span>
+            </p>
+        <script>
+            function add(){
+                num1 = document.getElementById("firstumber").value;
+                num2 = document.getElementById("secondnumber").value;
+                document.getElementById("result").innerHTML=num1 + num2;
+            }
+            function subtract(){
+                num3 = document.getElementById("firstnumber").value;
+                num4 = document.getElementById("secondnumber").value;
+                document.getElementById("result").innerHTML=num3 - num;
+            }
+            function multiplyBy(){
+                num1 = document.getElementById("firstnumber").value;
+                num2 = document.getElementById("secondnumber").value;
+                document.getElementById("result").innerHTML=num1 * num2;
+            }
+            function division(){
+                num1 = document.getElementById("firstnumber").value;
+                num2 = document.getElementById("secondnumber").value;
+                document.getElementById("result").innerHTML=num1 / num2;
+            }
+            function sqrt(){
+                num1 = document.getElementById("firstnumber").value;
+                document.getElementById("result").innerHTML=sqrt(num1);
+            }
+            function per(){
+                num1 = document.getElementById("firstnumber").value;
+                num2 = document.getElementById("firstnumber").value;
+                document.getElementById("result").innerHTML=(num1/num2)*100;
+            }
+        </script>
+    
+    </body>
+</html>
