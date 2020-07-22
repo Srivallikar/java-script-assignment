@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> lets upgrade assignment</h1>
+        <h4 id="time"></h4>
+    </head>
+    <body>
+        <script>
+            const ctime = document.getElementById('time')
+            function clock(){
+        let date = new Date();
+         time = date.toLocaleTimeString();
+        ctime.innerText = time;
+        }
+        setInterval(clock,1000)
+
+        onload=function(){setTimeout(function(){document.body.style.backgroundColor="#"+Math.round(Math.random()*16777215).toString(16);},5000);};
+        </script>
+    </body>
+</html>
